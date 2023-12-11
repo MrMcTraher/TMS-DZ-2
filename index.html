@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<h2 class="wrapper__title">
+			Данные получателя
+		</h2>
+		<form class="wrapper__form" action="#">
+			<input class="wrapper__form-input" type="text" name="surname" required placeholder="Фамилия">
+			<input class="wrapper__form-input" type="text" name="name" required placeholder="Имя">
+			<input class="wrapper__form-input" type="text" name="father-name" required placeholder="Отчество">
+		</form>
+		<input class="wrapper__form-input wrapper__form-input--outdoor" type="tel" name="tel-number" required
+			placeholder="Номер телефона">
+		<p class="wrapper__text">По этому номеру телефона мы с вяжемся с вами для подтверждения заказа</p>
+		<form class="wrapper__email" action="#">
+			<input class="wrapper__input-email" type="email" required placeholder="E-mail">
+			<p class="wrapper__text">На эту почту вам придет письмо с составом заказа, а так же трэк-номер для его
+				отслеживания</p>
+		</form>
+
+		<label class="wrapper__label">
+			<input class="wrapper__label-checkbox" type="checkbox" name="subscribe" value="yes">
+			<span class="wrapper__custom-checkbox"></span>
+			Подписаться на рассылку новинок и акций
+		</label>
+
+		<h2 class="wrapper__title">
+			Способ оплаты
+		</h2>
+		<form class="wrapper__radio" action="#">
+			<div class="wrapper__radio-group">
+				<label class="wrapper__radio-label">
+					<input class="wrapper__radio-input" type="radio" name="payment-method">
+					<span class="wrapper__custom-radio"></span>
+					Оплата при получении наличными или картой
+				</label>
+			</div>
+
+			<div class="wrapper__radio-group">
+				<label class="wrapper__radio-label">
+					<input class="wrapper__radio-input" type="radio" name="payment-method" checked>
+					<span class="wrapper__custom-radio"></span>
+					Оплата банковской картой онлайн
+				</label>
+			</div>
+
+
+		</form>
+	</div>
+</body>
+
+</html>
